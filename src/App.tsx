@@ -70,13 +70,13 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-7xl md:text-9xl mb-8 bg-gradient-to-r from-violet-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent leading-[0.9] tracking-tight">
+            <h1 className="text-5xl md:text-7xl mb-8 bg-gradient-to-r from-violet-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent leading-[0.9] tracking-tight">
               HackHost
             </h1>
-            <p className="text-2xl md:text-3xl mb-6 text-slate-200 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl mb-6 text-slate-200 max-w-4xl mx-auto leading-relaxed">
               The Intelligent Platform for Effortless Hackathons
             </p>
-            <p className="text-xl mb-16 text-slate-400 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg mb-16 text-slate-400 max-w-3xl mx-auto leading-relaxed">
               AI-powered co-pilot to launch, match, and support your event
             </p>
           </motion.div>
@@ -89,15 +89,15 @@ export default function App() {
           >
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-700 hover:to-cyan-700 text-white px-10 py-7 text-xl shadow-2xl shadow-violet-500/25 transition-all duration-300 transform hover:scale-105 hover:shadow-violet-500/40 border-0"
+              className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-700 hover:to-cyan-700 text-white px-8 py-6 text-lg shadow-2xl shadow-violet-500/25 transition-all duration-300 transform hover:scale-105 hover:shadow-violet-500/40 border-0"
             >
               Get Started
-              <ChevronRight className="ml-3" size={24} />
+              <ChevronRight className="ml-3" size={20} />
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="border-2 border-slate-600 text-slate-200 hover:bg-slate-800/50 hover:border-slate-500 px-10 py-7 text-xl transition-all duration-300 backdrop-blur-sm"
+              className="border-2 border-slate-600 text-slate-200 hover:bg-slate-800/50 hover:border-slate-500 px-8 py-6 text-lg transition-all duration-300 backdrop-blur-sm"
             >
               See How It Works
             </Button>
@@ -115,8 +115,8 @@ export default function App() {
             transition={{ duration: 0.6 }}
             className="text-center mb-20"
           >
-            <h2 className="text-5xl md:text-6xl mb-8 text-slate-100">The Challenge</h2>
-            <p className="text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+            <h2 className="text-4xl md:text-5xl mb-8 text-slate-100">The Challenge</h2>
+            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
               Organizing hackathons shouldn't be a hackathon itself
             </p>
           </motion.div>
@@ -150,8 +150,8 @@ export default function App() {
                 <div className="text-red-400 mb-8 transition-all duration-300 group-hover:scale-110 group-hover:text-red-300 flex justify-center">
                   {problem.icon}
                 </div>
-                <h3 className="text-2xl mb-6 text-slate-100 group-hover:text-white transition-colors duration-300">{problem.title}</h3>
-                <p className="text-slate-300 leading-relaxed text-lg">{problem.description}</p>
+                <h3 className="text-xl mb-6 text-slate-100 group-hover:text-white transition-colors duration-300">{problem.title}</h3>
+                <p className="text-slate-300 leading-relaxed text-base">{problem.description}</p>
               </motion.div>
             ))}
           </div>
@@ -168,8 +168,8 @@ export default function App() {
             transition={{ duration: 0.6 }}
             className="text-center mb-20"
           >
-            <h2 className="text-5xl md:text-6xl mb-8 text-slate-100">Your AI Co-Pilot for Hackathons</h2>
-            <p className="text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+            <h2 className="text-4xl md:text-5xl mb-8 text-slate-100">Your AI Co-Pilot for Hackathons</h2>
+            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
               Streamline every aspect of your hackathon with intelligent automation
             </p>
           </motion.div>
@@ -229,8 +229,8 @@ export default function App() {
                       {feature.icon}
                     </div>
                     <div>
-                      <h3 className="text-2xl mb-4 text-slate-100 group-hover:text-white transition-colors duration-300">{feature.title}</h3>
-                      <p className="text-slate-300 leading-relaxed text-lg">{feature.description}</p>
+                      <h3 className="text-xl mb-4 text-slate-100 group-hover:text-white transition-colors duration-300">{feature.title}</h3>
+                      <p className="text-slate-300 leading-relaxed text-base">{feature.description}</p>
                     </div>
                   </div>
                 </Card>
@@ -240,71 +240,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Guiding Philosophy */}
-      <section className="py-32 px-6 bg-gradient-to-b from-slate-950/50 to-background">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-20"
-          >
-            <h2 className="text-5xl md:text-6xl mb-8 text-slate-100">Our Philosophy</h2>
-            <p className="text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              Built on three core principles that drive innovation
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Robust Core",
-                description: "Rock-solid infrastructure that scales from 10 to 10,000 participants without breaking a sweat",
-                gradient: "from-violet-600/30 to-violet-800/10",
-                icon: "🏗️",
-                accent: "violet"
-              },
-              {
-                title: "Elegant Interface", 
-                description: "Intuitive design that makes complex event management feel effortless for organizers and participants",
-                gradient: "from-cyan-600/30 to-cyan-800/10",
-                icon: "✨",
-                accent: "cyan"
-              },
-              {
-                title: "AI-Powered Engine",
-                description: "Smart automation that learns from each event to continuously improve the hackathon experience",
-                gradient: "from-emerald-600/30 to-emerald-800/10",
-                icon: "🤖",
-                accent: "emerald"
-              }
-            ].map((principle, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-              >
-                <Card className={`p-10 h-full bg-gradient-to-br ${principle.gradient} border-slate-700/50 hover:border-slate-600/80 transition-all duration-500 hover:scale-105 group backdrop-blur-sm shadow-2xl`}>
-                  <div className="text-center">
-                    <div className="text-5xl mb-6 transition-transform duration-300 group-hover:scale-110">
-                      {principle.icon}
-                    </div>
-                    <h3 className={`text-3xl mb-6 text-slate-100 group-hover:text-${principle.accent}-400 transition-colors duration-300`}>
-                      {principle.title}
-                    </h3>
-                    <p className="text-slate-300 leading-relaxed text-lg">
-                      {principle.description}
-                    </p>
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* FAQs Section */}
       <section className="py-32 px-6 bg-gradient-to-br from-slate-900/60 to-slate-800/30">
@@ -316,8 +251,8 @@ export default function App() {
             transition={{ duration: 0.6 }}
             className="text-center mb-20"
           >
-            <h2 className="text-5xl md:text-6xl mb-8 text-slate-100">Frequently Asked Questions</h2>
-            <p className="text-2xl text-slate-300">
+            <h2 className="text-4xl md:text-5xl mb-8 text-slate-100">Frequently Asked Questions</h2>
+            <p className="text-xl text-slate-300">
               Everything you need to know about HackHost
             </p>
           </motion.div>
@@ -352,10 +287,10 @@ export default function App() {
                 }
               ].map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="border-slate-700/60 bg-slate-800/30 rounded-xl px-6 backdrop-blur-sm">
-                  <AccordionTrigger className="text-left hover:text-violet-400 transition-colors duration-300 text-xl text-slate-200 py-6">
+                  <AccordionTrigger className="text-left hover:text-violet-400 transition-colors duration-300 text-lg text-slate-200 py-6">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-slate-300 leading-relaxed text-lg pb-6">
+                  <AccordionContent className="text-slate-300 leading-relaxed text-base pb-6">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -375,18 +310,18 @@ export default function App() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-6xl md:text-7xl mb-10 text-slate-100 leading-tight">
+            <h2 className="text-4xl md:text-5xl mb-10 text-slate-100 leading-tight">
               Start hosting smarter hackathons today
             </h2>
-            <p className="text-2xl text-slate-300 mb-16 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-300 mb-16 max-w-3xl mx-auto leading-relaxed">
               Join the future of hackathon management. Your participants will thank you.
             </p>
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-700 hover:to-cyan-700 text-white px-16 py-10 text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-violet-500/25 hover:shadow-violet-500/40 border-0"
+              className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-700 hover:to-cyan-700 text-white px-12 py-8 text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-violet-500/25 hover:shadow-violet-500/40 border-0"
             >
               Launch with HackHost
-              <Sparkles className="ml-4" size={28} />
+              <Sparkles className="ml-4" size={20} />
             </Button>
           </motion.div>
         </div>
@@ -403,10 +338,10 @@ export default function App() {
               transition={{ duration: 0.6 }}
               className="mb-8 md:mb-0"
             >
-              <h3 className="text-3xl bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent mb-3">
+              <h3 className="text-2xl bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent mb-3">
                 HackHost
               </h3>
-              <p className="text-slate-300 text-lg">The intelligent hackathon platform</p>
+              <p className="text-slate-300 text-base">The intelligent hackathon platform</p>
             </motion.div>
 
             <motion.div
@@ -417,13 +352,13 @@ export default function App() {
               className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-16"
             >
               <div className="flex space-x-10">
-                <a href="#" className="text-slate-300 hover:text-violet-400 transition-colors duration-300 text-lg">
+                <a href="#" className="text-slate-300 hover:text-violet-400 transition-colors duration-300 text-base">
                   About
                 </a>
-                <a href="#" className="text-slate-300 hover:text-violet-400 transition-colors duration-300 text-lg">
+                <a href="#" className="text-slate-300 hover:text-violet-400 transition-colors duration-300 text-base">
                   Pricing
                 </a>
-                <a href="#" className="text-slate-300 hover:text-violet-400 transition-colors duration-300 text-lg">
+                <a href="#" className="text-slate-300 hover:text-violet-400 transition-colors duration-300 text-base">
                   Contact
                 </a>
               </div>
@@ -443,7 +378,7 @@ export default function App() {
           </div>
           
           <div className="border-t border-slate-800 mt-16 pt-10 text-center">
-            <p className="text-slate-400 text-lg">
+            <p className="text-slate-400 text-base">
               © 2025 HackHost. All rights reserved. Making hackathons effortless.
             </p>
           </div>
